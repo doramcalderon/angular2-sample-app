@@ -54,9 +54,12 @@ We need to add some loaders in order to work with css styles, fonts, and images
 
 ### webpack.config.js
 
-Entry, vendors styles:
+Entries, vendors and vendors styles:
 
 ```javascript
+vendors: [...
+          ,'jquery',
+          'bootstrap',],
 vendorStyles: [
   '../node_modules/bootstrap/dist/css/bootstrap.css'
 ]
